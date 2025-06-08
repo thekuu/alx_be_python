@@ -13,7 +13,7 @@ def main():
         display_menu()
         choice = input("Enter your choice: ")    
         if choice == "1":
-            item = input("Enter an item to add to your shopping list: ").strip()
+            item = input("Enter the item to add: ").strip()
             if item:
                 shopping_list.append(item)
                 print(f"'{item}' added to your list.")
@@ -21,7 +21,7 @@ def main():
                 print("You didn't enter an item!")
             pass
         elif choice == "2":
-            item = input("Enter an item to remove from your shopping list: ").strip()
+            item = input("Enter the item to remove: ").strip()
             if item not in shopping_list:
                 print("The item is not found in the shopping list!")
             else:
